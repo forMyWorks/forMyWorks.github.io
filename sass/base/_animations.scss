@@ -1,0 +1,17 @@
+@keyframes heart {
+  from {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+.animate__animated.animate__bounce, .animate__animated.animate__tada {
+  --animate-duration: 2s;
+  animation-iteration-count: infinite;
+}
