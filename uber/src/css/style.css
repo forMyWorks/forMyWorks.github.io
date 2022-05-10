@@ -1,0 +1,137 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 1140px;
+}
+.top_header {
+  background-color: #212121;
+  min-height: 53px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+}
+header {
+  position: relative;
+}
+header .header {
+  padding: 11px 70px 11px;
+}
+header .header .nav_menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+  list-style-type: none;
+  padding: 0;
+}
+header nav.header .nav_menu .nav_menu_some {
+  height: 31px;
+  padding-right: 15px;
+  border-right: 2px dashed #000000;
+}
+header nav.header .nav_menu .nav_menu_some .nav_menu_some_ref {
+  font-weight: 300;
+  font-size: 15px;
+  color: #ffffff;
+}
+.sub_header {
+  position: absolute;
+  top: 53px;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 87px;
+  width: 100%;
+  padding-top: 24px;
+  z-index: 3;
+}
+
+.sub_header .row .uber_mosc_text {
+  font-weight: 100;
+  font-size: 13px;
+  color: #ffffff;
+}
+.sub_header .row .num_tel {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: right;
+  color: #ffffff;
+}
+.sub_header .row .uber_mosc {
+  max-width: 100%;
+}
+
+.sub_header .row .num_tel a {
+  font-weight: 400;
+  font-size: 22px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.sub_header .row button {
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.invite {
+    position: relative;
+  background: url("../img/uber_bg.png") center center/cover no-repeat;
+  min-height: 714px;
+  padding-top: 152px;
+  padding-bottom: 185px;
+  top: 53px;
+  z-index: 2;
+}
+
+.invite .container .row h1 {
+  font-weight: 700;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+.invite .container .row h2 {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 23px;
+}
+.invite .container .row .text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.invite .container .row button {
+  display: block;
+  width: 259px;
+  height: 63px;
+  background: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%);
+  box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  margin: 115px auto 0;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+  cursor: pointer;
+}
+
