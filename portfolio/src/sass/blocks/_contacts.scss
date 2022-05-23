@@ -49,9 +49,11 @@
     }
   }
   &__github {
-    transition: all 0.7s;
-    &:hover {
-      transform: scale(1.4) rotate(360deg);
+    svg {
+      transition: all 0.7s;
+      &:hover {
+        transform: scale(1.4) rotate(360deg);
+      }
     }
   }
 }
