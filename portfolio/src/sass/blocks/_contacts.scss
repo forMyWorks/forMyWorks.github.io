@@ -1,0 +1,51 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 20px;
+ background-color: rgb(247,227,228);
+  &__grid-blocks {
+    display: grid;
+    grid-template-columns: 250px minmax(100px, auto);
+    column-gap: 50px;
+  }
+  &__photo {
+    width: 250px;
+    img {
+      width: 100%;
+      opacity: 0.92;
+      border-radius: 10px;
+    }
+  }
+  &__subtitle {
+    padding-left: 10px;
+    position: relative;
+    text-align: start;
+    z-index: 3;
+    @include before_circle;
+  }
+  &__title {
+    margin-top: 10px;
+    text-align: start;
+  }
+  &__line {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: $main-color;
+  }
+  &__desc {
+    padding-top: 10px;
+  }
+  &__me {
+    margin-top: 10px;
+    height: 30px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      height: 100%;
+      transition: all 0.7s;
+      &:hover {
+        transform: scale(1.4) rotate(360deg);
+      }
+    }
+  }
+}

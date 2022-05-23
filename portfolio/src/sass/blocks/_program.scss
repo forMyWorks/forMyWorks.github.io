@@ -1,0 +1,117 @@
+.program {
+  //   background: linear-gradient($main-color-contrast, #23b098);
+  background-color: rgb(247,227,228);
+  &_subtitle {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    padding-left: 0;
+    @include before_circle;
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46px;
+      height: 46px;
+      top: -11px;
+      background-color: $main-color-contrast_2;
+    }
+  }
+  &_title {
+    margin-top: 10px;
+    text-align: center;
+  }
+  &_line {
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: $main-color-contrast_2;
+  }
+  &__grid-blocks {
+    margin-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 260px);
+    grid-template-rows: minmax(270px, auto);
+    grid-auto-rows: minmax(270px, auto);
+    gap: 20px;
+    justify-content: space-between;
+  }
+  &__block {
+    display: grid;
+    grid-template-columns: 210px;
+    grid-template-rows: 65px 22px minmax(100px, auto);
+    row-gap: 10px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 25px;
+    border: #000 solid 1px;
+  }
+  &__img {
+    width: 95px;
+
+    img {
+      position: relative;
+      left: -29px;
+      width: 100%;
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  &__desc {
+    width: 210px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+  }
+  &__percent {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 30px;
+    justify-content: space-around ;
+
+    margin-top: 40px;
+    &_blocks {
+      display: grid;
+      
+
+      grid-template-columns: minmax(150px, auto) 40px;
+      grid-template-rows: 25px 15px;
+      row-gap: 20px;
+    }
+    &_pluse {
+      grid-column: 1/3;
+    }
+    &_title {
+      padding-left: 10px;
+      position: relative;
+      z-index: 3;
+      @include before_circle-contrast;
+      &:before {
+        left: -3px;
+        top: -7px;
+        background-color: $main-color-contrast_2;
+      }
+    }
+    &_pluse {
+      width: 100%;
+      height: 10px;
+      border-radius: 4px;
+      background-color: #b5bec3;
+    }
+    &_minus {
+      transition: all 1s;
+      height: 100%;
+      border-radius: 4px;
+      background-color: $main-color-contrast_2;
+    }
+    &_num {
+      background-color: rgb(247,227,228);
+      border: none;
+    }
+  }
+}

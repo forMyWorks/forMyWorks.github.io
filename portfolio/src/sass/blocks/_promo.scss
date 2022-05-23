@@ -1,0 +1,125 @@
+.promo {
+  min-height: 100vh;
+  background: linear-gradient(rgba(200, 200, 200, 0.2), rgba(255, 45, 55, 0.4)),
+    url("../img/main_bg.jpg") center center / cover no-repeat;
+  position: relative;
+
+  padding-top: 106px;
+  padding-bottom: 362px;
+  &__hamburger {
+    width: 36px;
+    height: 21px;
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    transition: all 0.5s;
+    &:hover {
+      .promo__hamburger-line_long {
+        width: 70px;
+
+        &:before {
+          content: "";
+          height: 18px;
+          width: 2px;
+          transform: rotate(-53deg);
+          background-color: #000;
+          position: absolute;
+          z-index: -1;
+          left: 4px;
+          top: -2px;
+        }
+        &::after {
+          content: "";
+          height: 18px;
+          width: 2px;
+          transform: rotate(53deg);
+          background-color: #000;
+          position: absolute;
+          z-index: -1;
+          left: 4px;
+          top: -12px;
+        }
+      }
+      .promo__hamburger-line {
+        width: 0px;
+      }
+    }
+    cursor: pointer;
+    &-line {
+      background-color: #151812;
+      transition: all 0.3s;
+      width: 30px;
+      height: 3px;
+      &_long {
+        transition: all 0.3s;
+        background-color: #151812;
+        width: 36px;
+        height: 3px;
+        position: relative;
+        z-index: 2;
+        &:before {
+          content: "";
+          transition: all 0.3s;
+        }
+        &::after {
+          content: "";
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
+  &__subtitle {
+    position: relative;
+    z-index: 2;
+    @include before_circle;
+  }
+  &__title {
+    width: 500px;
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+  &__btns {
+    width: 127px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    transition: all 0.3s;
+    &:hover {
+      box-shadow: 10px -10px teal;
+    }
+    .sub_btn {
+      display: flex;
+      width: 127px;
+      height: 45px;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: rgb(103, 159, 210);
+      transition: all 0.3s;
+      &:hover {
+        color:antiquewhite;
+      }
+    }
+  }
+  &__link {
+    display: block;
+    color: #000;
+
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}

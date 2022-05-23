@@ -1,0 +1,225 @@
+@media (max-width: 1320px) {
+  .sidepanel {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 1178px) {
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+  .about-me__grid-blocks {
+    width: 729px;
+    row-gap: 10px;
+    column-gap: 36px;
+  }
+  #about-me__skills {
+    grid-template-columns: 240px 200px;
+    grid-template-rows: 100%;
+
+    column-gap: 20px;
+  }
+  .skills {
+    &-first {
+      grid-template-columns: 40px 200px;
+      grid-template-rows: minmax(75px, auto);
+
+      column-gap: 10px;
+    }
+    &-second {
+      grid-template-columns: 40px 150px;
+      grid-template-rows: minmax(75px, auto);
+
+      column-gap: 10px;
+    }
+  }
+  .utility__grids-blocks {
+    display: grid;
+  }
+  .program__grid-blocks {
+    justify-content: center;
+  }
+  .my-works__blocks {
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: 280px 280px 280px;
+    justify-content: start;
+    row-gap: 10px;
+  }
+  #pulse {
+    grid-column: 3/5;
+  }
+  #uber {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #plans {
+    grid-column: 3/5;
+    grid-row: 3/4;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+  .about-me {
+    padding-top: 40px;
+  }
+  .about-me__grid-blocks {
+    width: 520px;
+    margin-right: 0;
+    row-gap: 20px;
+    justify-content: center;
+    grid-template-columns: minmax(250px, 490px);
+    grid-template-rows: minmax(240px, auto) minmax(140px, auto);
+    grid-template-areas:
+      "photo "
+      "desc "
+      "skill";
+  }
+  .about-me_fz36 {
+    margin-top: 7px;
+  }
+  .program__percent {
+    grid-template-columns: repeat(1, 350px);
+
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .my-works__blocks {
+    grid-template-columns: repeat(4, 140px);
+    grid-template-rows: 280px 280px 280px;
+    justify-content: start;
+    row-gap: 10px;
+  }
+  #pulse {
+    grid-column: 2/4;
+  }
+  #uber {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #plans {
+    grid-column: 2/4;
+    grid-row: 3/4;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .promo__title {
+    width: 305px;
+    text-align: center;
+  }
+  .title_fz48 {
+    font-size: 38px;
+    line-height: 56px;
+  }
+  .title {
+    font-weight: 600;
+  }
+  .navigation__menu {
+    width: 272px;
+    padding-right: 18px;
+  }
+  .navigation__menu_link {
+    left: 90px;
+  }
+  .promo__hamburger {
+    top: 30px;
+    right: 21px;
+  }
+  .about-me__grid-blocks {
+    width: 320px;
+    margin: 0 auto;
+  }
+  .about-me__photo {
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+
+  #about-me__skills {
+    grid-template-columns: 250px;
+    grid-template-rows: 50% 50%;
+    row-gap: 20px;
+  }
+  #about-me__photo {
+    justify-self: center;
+  }
+  .skills {
+    &-second {
+      grid-template-columns: 40px 200px;
+    }
+  }
+
+  .about-me_fz36,
+  .utility_title,
+  .program_title,
+  .my-works_title,
+  .contacts__title {
+    font-size: 31px;
+  }
+  .utility__grids-blocks {
+    padding-left: 40px;
+  }
+  .utility-grid {
+    grid-template-columns: 55px 250px;
+    grid-template-rows: 45px minmax(78px, auto);
+  }
+
+  .my-works__blocks {
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: 280px 280px 280px;
+    justify-content: center;
+    row-gap: 10px;
+  }
+  #pulse {
+    grid-column: 1/3;
+  }
+  #uber {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  #plans {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+
+  .contacts__grid-blocks {
+    grid-template-columns: minmax(100px, auto);
+    justify-content: center;
+  }
+  .contacts__photo {
+    display: none;
+  }
+  .contacts {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+  .promo {
+    background: linear-gradient(
+        rgba(200, 200, 200, 0.2),
+        rgba(255, 45, 55, 0.4)
+      ),
+      url("../img/main_bg.jpg") 10% / cover no-repeat;
+  }
+
+  .utility-grid {
+    display: grid;
+    grid-template-columns: 55px 200px;
+    grid-template-rows: 65px minmax(78px, auto);
+  }
+}

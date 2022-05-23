@@ -1,0 +1,24 @@
+.skills-block {
+  display: grid;
+  grid-template-columns: 50px 200px;
+  grid-template-rows: minmax(75px, auto);
+  column-gap: 10px;
+  
+  
+  &__desc {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+  }
+  &__img {
+    display: block;
+    margin: 15px 20px 5px 15px;
+    position: relative;
+    z-index: 2;
+    @include before_circle-contrast;
+    &::before {    
+      left: -14px;
+      top: -14px;
+    }
+  }
+}

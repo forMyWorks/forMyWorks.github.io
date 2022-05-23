@@ -1,0 +1,59 @@
+.about-me {
+  // background: linear-gradient($main-color, #60ab9b);
+  background-color: rgb(247, 227, 228);
+  padding-top: 107px;
+  padding-bottom: 70px;
+  &__photo {
+    width: 250px;
+    img {
+      width: 100%;
+      opacity: 0.9;
+      border-radius: 10px;
+    }
+  }
+
+  &_fz36 {
+    margin-top: 14px;
+  }
+  &__text {
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 21px;
+
+    color: #000000;
+  }
+
+  &__grid-blocks {
+    width: 820px;
+    display: grid;
+    grid-template-columns: 250px minmax(300px, auto);
+    grid-template-rows: minmax(240px, auto) minmax(100px, auto);
+    row-gap: 10px;
+    column-gap: 50px;
+    grid-template-areas:
+      "photo desc"
+      "photo skill";
+  }
+  &_title {
+    position: relative;
+    @include before_circle-contrast;
+    z-index: 2;
+  }
+}
+
+#about-me__photo {
+  grid-area: photo;
+}
+#about-me__desc {
+  margin-top: 20px;
+  grid-area: desc;
+}
+
+#about-me__skills {
+  grid-area: skill;
+  display: grid;
+  grid-template-columns: 250px minmax(250px, auto);
+  grid-template-rows: 100%;
+  column-gap: 20px;
+}

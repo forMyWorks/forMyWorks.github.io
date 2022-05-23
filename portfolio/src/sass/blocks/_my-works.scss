@@ -1,0 +1,65 @@
+.my-works {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: rgb(247,227,228);
+  &_subtitle {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+    padding-left: 0;
+    @include before_circle;
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 46px;
+      height: 46px;
+      top: -11px;
+      background-color:  $main-color-contrast;
+    }
+  }
+  &_title {
+    margin-top: 10px;
+    text-align: center;
+  }
+  &_line {
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: $main-color-contrast;
+  }
+  &__blocks{
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 280px);
+      grid-template-rows: 280px 280px;
+      justify-content: center;
+      gap: 7px;
+      
+      
+  }
+  &__block{
+     transition: all 0.3s;
+    img{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+       
+    }
+    &:hover{
+        filter: brightness(70%);
+        transform: scale(1.05);
+    }
+  }
+}
+
+#pulse{
+    grid-column: 2/3;
+}
+#uber{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+#plans{
+    grid-column: 3/4;
+    grid-row: 2/3;
+   
+}
