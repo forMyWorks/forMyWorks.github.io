@@ -9,8 +9,8 @@ $(".promo__link.sub_btn").on("click", function () {
       scrollTop: $(href).offset().top,
     },
     {
-      duration: 700, // по умолчанию «400»
-      easing: "swing", // по умолчанию «swing»
+      duration: 700,
+      easing: "swing", 
     }
   );
 
@@ -27,8 +27,8 @@ $(
       scrollTop: $(href).offset().top,
     },
     {
-      duration: 700, // по умолчанию «400»
-      easing: "swing", // по умолчанию «swing»
+      duration: 700, 
+      easing: "swing",
     }
   );
 
@@ -73,5 +73,5 @@ certificate.addEventListener("click", function () {
   }, 700);
   timer;
 });
-clearTimeout(timer);
+// clearTimeout(timer);
 

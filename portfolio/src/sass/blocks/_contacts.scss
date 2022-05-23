@@ -1,7 +1,7 @@
 .contacts {
   padding-top: 40px;
   padding-bottom: 20px;
- background-color: rgb(247,227,228);
+  background-color: rgb(247, 227, 228);
   &__grid-blocks {
     display: grid;
     grid-template-columns: 250px minmax(100px, auto);
@@ -46,6 +46,12 @@
       &:hover {
         transform: scale(1.4) rotate(360deg);
       }
+    }
+  }
+  &__github {
+    transition: all 0.7s;
+    &:hover {
+      transform: scale(1.4) rotate(360deg);
     }
   }
 }
