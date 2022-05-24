@@ -111,7 +111,15 @@
     grid-row: 3/4;
   }
   .navigation__menu_link {
-    bottom: 100px;
+    bottom: 90px;
+  }
+}
+@media (max-height: 420px) {
+  .navigation__menu_link {
+    bottom: 35px;
+  }
+  .navigation__menu {
+    padding-top: 40px;
   }
 }
 
