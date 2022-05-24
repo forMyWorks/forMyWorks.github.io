@@ -117,8 +117,11 @@
 @media (max-height: 420px) {
   .navigation__menu_link {
     bottom: 35px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .navigation__menu {
+    padding: 140px 72px 50px 120px;
     padding-top: 40px;
   }
 }
@@ -141,10 +144,12 @@
   }
   .navigation__menu {
     width: 272px;
-    padding-right: 18px;
+    padding-right: 58px;
+    padding-left: 70px;
   }
   .navigation__menu_link {
-    left: 90px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   .promo__hamburger {
     top: 30px;
