@@ -58,18 +58,30 @@ percent_num.forEach((item, index) => {
   });
 });
 
-const certificate = document.querySelector(".certificate");
+const certificate = document.querySelectorAll(".certificate");
 
-const a = document.querySelector(".utility__desc_last a");
-a.addEventListener("click", function () {
-  certificate.style.display = "block";
-  certificate.style.animationName = "big";
+const a = document.querySelectorAll(".utility__desc_last a");
+a[0].addEventListener("click", function () {
+  certificate[0].style.display = "block";
+  certificate[0].style.animationName = "big";
+});
+a[1].addEventListener("click", function () {
+  certificate[1].style.display = "block";
+  certificate[1].style.animationName = "big";
 });
 
-certificate.addEventListener("click", function () {
-  certificate.style.animationName = "small";
+certificate[0].addEventListener("click", function () {
+  certificate[0].style.animationName = "small";
   let timer = setTimeout(() => {
-    certificate.style.display = "none";
+    certificate[0].style.display = "none";
+  }, 700);
+  timer;
+});
+
+certificate[1].addEventListener("click", function () {
+  certificate[1].style.animationName = "small";
+  let timer = setTimeout(() => {
+    certificate[1].style.display = "none";
   }, 700);
   timer;
 });
